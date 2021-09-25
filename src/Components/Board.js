@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Square from './Square';
 
 const board = () => {
+    const [status, setBoard] = useState(Array(9).fill(null));
+
+    console.log(status);
+
     return (
         <div className="board">
             <div className="board-row">
